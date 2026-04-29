@@ -27,7 +27,6 @@ jobs:
         run: |
           git clone https://github.com/v2fly/domain-list-community.git compiler
           cd compiler
-          rm -rf data/*
           cp ../ru-whitelist-sites.txt data/whitelist-ru
           go run main.go
           cp dlc.dat ../geosite-ru.dat
